@@ -1,0 +1,44 @@
+<acceptance-test-run title="Add Customized User" name="Add Customized User" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="114" timestamp="2017-07-08T20:47:00.808+05:30">
+  <user-story id="service_one" name="Service one" path="stories/service_one.story"/>
+  <tags>
+    <tag name="Service one" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>user</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>user1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>user2</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {user=user1}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="7">
+      <description>Given ServiceOne Object created</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14">
+      <description>When {user1} is added</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7">
+      <description>Then Verify that {user1} is returned by getUsers</description>
+    </test-step>
+  </test-group>
+  <test-group name="[2] {user=user2}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given ServiceOne Object created</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>When {user2} is added</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then Verify that {user2} is returned by getUsers</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

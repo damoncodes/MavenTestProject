@@ -1,0 +1,40 @@
+<xref>
+  <whenMade>1499527026328</whenMade>
+  <createdBy>JBehave</createdBy>
+  <metaFilter>-ignore</metaFilter>
+  <meta/>
+  <stories>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>service_one.story</name>
+      <path>stories/service_one.story</path>
+      <html>stories.service_one.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Get Default User
+Given ServiceOne Object created
+When User calls getUsers
+Then Verify that Default user is returned
+
+
+Scenario:Add Customized User
+Given ServiceOne Object created
+When &lt;user&gt; is added
+Then Verify that &lt;user&gt; is returned by getUsers
+
+
+Scenario:Get First User
+Given ServiceOne Object created
+When User calls getFirstUser
+Then Verify that Default user is returned as String
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1499527020286</started>
+      <duration>675</duration>
+    </story>
+  </stories>
+  <stepMatches/>
+</xref>

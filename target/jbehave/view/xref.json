@@ -1,0 +1,22 @@
+{"xref": {
+  "whenMade": 1499527026328,
+  "createdBy": "JBehave",
+  "metaFilter": "-ignore",
+  "meta": [],
+  "stories": [
+    {
+      "description": "",
+      "narrative": "",
+      "name": "service_one.story",
+      "path": "stories/service_one.story",
+      "html": "stories.service_one.html",
+      "meta": "",
+      "scenarios": "Scenario:Get Default User\nGiven ServiceOne Object created\nWhen User calls getUsers\nThen Verify that Default user is returned\n\n\nScenario:Add Customized User\nGiven ServiceOne Object created\nWhen <user> is added\nThen Verify that <user> is returned by getUsers\n\n\nScenario:Get First User\nGiven ServiceOne Object created\nWhen User calls getFirstUser\nThen Verify that Default user is returned as String\n\n\n",
+      "passed": true,
+      "pending": false,
+      "started": 1499527020286,
+      "duration": 675
+    }
+  ],
+  "stepMatches": []
+}}

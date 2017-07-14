@@ -1,0 +1,47 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/service_one.story</div>
+<div class="scenario">
+<h2>Scenario: Get Default User</h2>
+<div class="step successful">Given ServiceOne Object created</div>
+<div class="step successful">When User calls getUsers</div>
+<div class="step successful">Then Verify that Default user is returned</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Add Customized User</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given ServiceOne Object created</div>
+<div class="step">When &lt;user&gt; is added</div>
+<div class="step">Then Verify that &lt;user&gt; is returned by getUsers</div>
+<table>
+<thead>
+<tr>
+<th>user</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>user1</td></tr>
+<tr>
+<td>user2</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {user=user1}</h3>
+<div class="step successful">Given ServiceOne Object created</div>
+<div class="step successful">When <span class="step parameter">user1</span> is added</div>
+<div class="step successful">Then Verify that <span class="step parameter">user1</span> is returned by getUsers</div>
+
+<h3 class="example">Example: {user=user2}</h3>
+<div class="step successful">Given ServiceOne Object created</div>
+<div class="step successful">When <span class="step parameter">user2</span> is added</div>
+<div class="step successful">Then Verify that <span class="step parameter">user2</span> is returned by getUsers</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Get First User</h2>
+<div class="step successful">Given ServiceOne Object created</div>
+<div class="step successful">When User calls getFirstUser</div>
+<div class="step successful">Then Verify that Default user is returned as String</div>
+</div>
+</div>

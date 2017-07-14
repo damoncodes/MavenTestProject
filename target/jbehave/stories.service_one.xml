@@ -1,0 +1,34 @@
+<story path="stories/service_one.story" title="">
+<scenario keyword="Scenario:" title="Get Default User">
+<step outcome="successful">Given ServiceOne Object created</step>
+<step outcome="successful">When User calls getUsers</step>
+<step outcome="successful">Then Verify that Default user is returned</step>
+</scenario>
+<scenario keyword="Scenario:" title="Add Customized User">
+<examples keyword="Examples:">
+<step>Given ServiceOne Object created</step>
+<step>When &lt;user&gt; is added</step>
+<step>Then Verify that &lt;user&gt; is returned by getUsers</step>
+<parameters>
+<names><name>user</name></names>
+<values><value>user1</value></values>
+<values><value>user2</value></values>
+</parameters>
+
+<example keyword="Example:">{user=user1}</example>
+<step outcome="successful">Given ServiceOne Object created</step>
+<step outcome="successful">When <parameter>user1</parameter> is added</step>
+<step outcome="successful">Then Verify that <parameter>user1</parameter> is returned by getUsers</step>
+
+<example keyword="Example:">{user=user2}</example>
+<step outcome="successful">Given ServiceOne Object created</step>
+<step outcome="successful">When <parameter>user2</parameter> is added</step>
+<step outcome="successful">Then Verify that <parameter>user2</parameter> is returned by getUsers</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="Get First User">
+<step outcome="successful">Given ServiceOne Object created</step>
+<step outcome="successful">When User calls getFirstUser</step>
+<step outcome="successful">Then Verify that Default user is returned as String</step>
+</scenario>
+</story>
